@@ -3,6 +3,8 @@ const fetch = require("node-fetch");
 const API =
     "https://youtube-v31.p.rapidapi.com/search?channelId=UCtTy-FTTdQWV1l7x9BHrtNw&part=snippet%2Cid&order=date&maxResults=9";
 
+const content = null || document.getElementById('content');
+
 const options = {
     method: "GET",
     headers: {
