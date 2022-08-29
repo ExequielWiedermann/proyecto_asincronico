@@ -9,3 +9,18 @@ const options = {
         'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
 };
+
+async function fetchData(urlApi) {
+    const response = await fetch(urlApi, options);
+    const data = await response.json();
+    return data;
+}
+
+(async() => {
+    try {
+        const videos = await fetchData(API);
+
+    } catch {
+
+    }
+})();
