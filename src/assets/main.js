@@ -9,8 +9,3 @@ const options = {
         'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
 };
-
-fetch(API, options)
-    .then(res => res.json())
-    .then(json => console.log(json))
-    .catch(err => console.error('error:' + err));
